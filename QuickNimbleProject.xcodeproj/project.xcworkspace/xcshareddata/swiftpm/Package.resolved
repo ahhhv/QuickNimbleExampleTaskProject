@@ -1,0 +1,24 @@
+{
+  "originHash" : "f066a9504df1c6f7d5c71187c01de55ee4e63787e732619b1cf383b9327ce20f",
+  "pins" : [
+    {
+      "identity" : "nimble",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/Quick/Nimble.git",
+      "state" : {
+        "revision" : "e9d769113660769a4d9dd3afb855562c0b7ae7b0",
+        "version" : "7.3.4"
+      }
+    },
+    {
+      "identity" : "quick",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/Quick/Quick",
+      "state" : {
+        "revision" : "f2b5a06440ea87eba1a167cab37bf6496646c52e",
+        "version" : "1.3.4"
+      }
+    }
+  ],
+  "version" : 3
+}

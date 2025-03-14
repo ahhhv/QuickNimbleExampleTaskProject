@@ -1,3 +1,11 @@
+//
+//  TaskViewModelEdgeCasesTests.swift
+//  QuickNimbleProject
+//
+//  Created by Alex Hernández on 13/3/25.
+//
+
+
 import Quick
 import Nimble
 @testable import QuickNimbleProject
@@ -28,7 +36,7 @@ class TaskViewModelEdgeCasesTests: QuickSpec {
                 it("should not add duplicate tasks") {
                     viewModel.addTask(title: "Test Task")
                     viewModel.addTask(title: "Test Task")
-                    expect(viewModel.numberOfTasks).to(equal(2)) // Cambiar si se desea evitar duplicados
+                    expect(viewModel.numberOfTasks).to(equal(2))
                 }
                 
                 it("should support adding a large number of tasks efficiently") {

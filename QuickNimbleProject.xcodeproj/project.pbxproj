@@ -6,6 +6,11 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		9009C7262D833DD000E46FC5 /* Quick in Frameworks */ = {isa = PBXBuildFile; productRef = 9009C7252D833DD000E46FC5 /* Quick */; };
+		9009C72C2D833E2400E46FC5 /* Nimble in Frameworks */ = {isa = PBXBuildFile; productRef = 9009C72B2D833E2400E46FC5 /* Nimble */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXContainerItemProxy section */
 		9009C6F72D8335F100E46FC5 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -72,6 +77,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9009C7262D833DD000E46FC5 /* Quick in Frameworks */,
+				9009C72C2D833E2400E46FC5 /* Nimble in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -148,6 +155,8 @@
 			);
 			name = QuickNimbleProjectTests;
 			packageProductDependencies = (
+				9009C7252D833DD000E46FC5 /* Quick */,
+				9009C72B2D833E2400E46FC5 /* Nimble */,
 			);
 			productName = QuickNimbleProjectTests;
 			productReference = 9009C6F62D8335F100E46FC5 /* QuickNimbleProjectTests.xctest */;
@@ -208,6 +217,10 @@
 			);
 			mainGroup = 9009C6D72D8335F000E46FC5;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				9009C7242D833DD000E46FC5 /* XCRemoteSwiftPackageReference "Quick" */,
+				9009C72A2D833E2400E46FC5 /* XCRemoteSwiftPackageReference "Nimble" */,
+			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = 9009C6E12D8335F000E46FC5 /* Products */;
 			projectDirPath = "";
@@ -294,7 +307,6 @@
 				INFOPLIST_FILE = QuickNimbleProject/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -304,9 +316,13 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = ahhhv.com.QuickNimbleProject;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -322,7 +338,6 @@
 				INFOPLIST_FILE = QuickNimbleProject/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -332,9 +347,13 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = ahhhv.com.QuickNimbleProject;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
@@ -569,6 +588,38 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		9009C7242D833DD000E46FC5 /* XCRemoteSwiftPackageReference "Quick" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Quick/Quick";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.0;
+			};
+		};
+		9009C72A2D833E2400E46FC5 /* XCRemoteSwiftPackageReference "Nimble" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Quick/Nimble";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		9009C7252D833DD000E46FC5 /* Quick */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 9009C7242D833DD000E46FC5 /* XCRemoteSwiftPackageReference "Quick" */;
+			productName = Quick;
+		};
+		9009C72B2D833E2400E46FC5 /* Nimble */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 9009C72A2D833E2400E46FC5 /* XCRemoteSwiftPackageReference "Nimble" */;
+			productName = Nimble;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 9009C6D82D8335F000E46FC5 /* Project object */;
 }

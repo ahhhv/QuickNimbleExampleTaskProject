@@ -1,4 +1,11 @@
-import UIKit
+//
+//  Task.swift
+//  QuickNimbleProject
+//
+//  Created by Alex Hernández on 13/3/25.
+//
+
+import Foundation
 
 // Modelo de Tarea
 struct Task {

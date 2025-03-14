@@ -1,5 +1,13 @@
+//
+//  TaskViewModelConcurrencyTests.swift
+//  QuickNimbleProject
+//
+//  Created by Alex Hernández on 13/3/25.
+//
+
 import Quick
 import Nimble
+import Foundation
 @testable import QuickNimbleProject
 
 class TaskViewModelConcurrencyTests: QuickSpec {
@@ -36,7 +44,7 @@ class TaskViewModelConcurrencyTests: QuickSpec {
                         viewModel.loadTasksAsync {}
                         
                         DispatchQueue.global().asyncAfter(deadline: .now() + 2.5) {
-                            expect(viewModel.numberOfTasks).to(equal(2)) // Debe mantener el estado correcto
+                            expect(viewModel.numberOfTasks).to(equal(2)) 
                             done()
                         }
                     }
