@@ -29,7 +29,7 @@ Este proyecto implementa un **Task Manager** con un `TaskViewModel` que permite 
 ## 🧪 Instalación y ejecución de los tests
 ### 1️⃣ Clonar el repositorio
 ```bash
-git clone https://github.com/tu-usuario/QuickNimbleProject.git
+git clone https://github.com/ahhhv/QuickNimbleProject.git
 cd QuickNimbleProject
 ```
 
